@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Four_souls_card_parser
+﻿namespace Four_souls_card_parser
 {
     class Card
     {
-        private uint id;
-        private CardType.Type cardType;
-        private string name;
-        private string boxSet;
+        public uint id { get; set; }
+        public CardType.Type cardType { get; set; }
+        public string name { get; set; }
+        public string boxSet { get; set; }
 
         public Card(uint inputId, CardType.Type inputType, string inputName, string inputBoxSet)
         {
