@@ -8,7 +8,7 @@ namespace Four_souls_card_parser
 {
     class CardType
     {
-        private enum Type
+        internal enum Type
         {
             Character,
             StartingItem,
@@ -16,7 +16,8 @@ namespace Four_souls_card_parser
             Treasure,
             Loot,
             BonusSoul,
-            Room
+            Room,
+            NoType
         }
     }
 }
