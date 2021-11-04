@@ -149,7 +149,6 @@ namespace Four_souls_card_parser
             csv.AppendLine(newLine);
             foreach (Card card in Cards)
             {
-                //in your loop
                 var first = card.id.ToString();
                 var second = card.name;
                 var third = card.cardType;
@@ -159,7 +158,6 @@ namespace Four_souls_card_parser
                 csv.AppendLine(newLine);
 
             }
-            //after your loop
             File.WriteAllText("TBoI Cards.csv", csv.ToString());
         }
     }
